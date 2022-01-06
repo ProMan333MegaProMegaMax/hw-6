@@ -1,0 +1,161 @@
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+.header {
+    padding-top: 28px;
+    padding-bottom: 24px;
+}
+
+.logo {
+    display: block;
+    width: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+}
+
+nav {
+    width: 991px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-list {
+    list-style: none;
+    text-align: center;
+    font-family: 'Princess Sofia', serif ;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 45px;
+}
+
+.menu-link {
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    transition: .3s;
+}
+
+.menu-link:hover {
+    color: #C5621E;
+}
+
+.menu-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #C5621E;
+    border-radius: 40px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.menu-link:hover::after {
+    transform: scaleX(1);
+}
+
+.hero-title span {
+    font-family: 'Comforter', cursive;
+}
+
+.hero {
+    padding-top: 60px;
+    padding-bottom: 210px;
+    background: url(../img/фон.png) center / cover no-repeat;
+    position: relative;
+}
+
+.hero-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 144px;
+    line-height: 196px;
+    color: #FEF4F4;
+    margin-bottom: 26px;
+}
+
+.subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 145px;
+}
+
+.btn {
+    display: block;
+    background: #D38753;
+    border-radius: 40px;
+    color: #fff;
+    width: 450px;
+    padding: 20px 20px 21px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 49px;
+    transition: background .3s;
+}
+
+.buy-btn:hover {
+    background: #D17753;
+}
+
+/* .buy-btn {
+
+} */
+
+.hero::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90.16deg, #F0AD80 39.23%, rgba(250, 195, 158, 0) 95.33%);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-title{
+    font-family: 'Parisienne',serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 131px;
+    color: #D38753;
+}
+
+.adv-img {
+    width: 238px;
+    height: 238px;
+    border: 7px solid #827B7B;
+    border-radius: 50%;
+    padding: 40px;
+    padding-top: 37px;
+}
+
+.adv-item p {
+font-family: Quicksand, serif;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+color: #000000;
+}
